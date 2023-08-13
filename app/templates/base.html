@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Bibliotheca</title>
+        {% else %}
+        <title>Welcome to Bibliotheca</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Bibliotheca: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
